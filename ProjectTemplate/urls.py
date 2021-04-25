@@ -6,7 +6,8 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.landing_page, name='landing_page')
+    path('', include('apps.core.urls')),
+    # path('', views.landing_page, name='landing_page')
 ]
 
 if settings.DEBUG:

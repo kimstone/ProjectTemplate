@@ -16,6 +16,7 @@ INSTALLED_APPS = [
 ]
 
 PROJECT_APPS = [
+    'apps.core.apps.CoreConfig',
 ]
 
 INSTALLED_APPS += PROJECT_APPS
